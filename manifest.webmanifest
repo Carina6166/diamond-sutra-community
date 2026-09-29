@@ -1,0 +1,23 @@
+{
+  "name": "金剛經每日讀誦",
+  "short_name": "金剛經",
+  "description": "簡潔的《金剛經》每日讀誦與分品記錄",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F4ED",
+  "theme_color": "#F7F4ED",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

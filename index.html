@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#F7F4ED">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="金剛經讀誦">
+  <meta name="description" content="簡潔的《金剛經》每日讀誦與分品記錄">
+  <title>金剛經每日讀誦</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="app-header">
+      <div>
+        <div class="date" id="headerDate"></div>
+        <h1>金剛經每日讀誦</h1>
+      </div>
+      <button class="share-button" id="shareBtn" aria-label="分享">↗</button>
+    </header>
+
+    <main class="main" id="main"></main>
+
+    <nav class="nav" aria-label="主選單">
+      <button class="nav-button active" data-view="today">
+        <span class="nav-icon">○</span>
+        <span>今日</span>
+      </button>
+      <button class="nav-button" data-view="reader">
+        <span class="nav-icon">冊</span>
+        <span>經文</span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <div class="modal-backdrop hidden" id="roundModal">
+    <div class="modal-card">
+      <div class="modal-kicker">今日功課</div>
+      <h2 id="roundModalTitle">完成一遍</h2>
+      <p>三十二分已全部讀誦完成。</p>
+      <div class="modal-actions">
+        <button class="button secondary" id="roundLaterBtn">返回今日</button>
+        <button class="button primary" id="roundContinueBtn">繼續下一遍</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./sutra-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
