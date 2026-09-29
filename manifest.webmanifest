@@ -1,0 +1,13 @@
+{
+  "name":"金刚经 · 每日读诵共修",
+  "short_name":"金刚经共修",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f4efe5",
+  "theme_color":"#3f6650",
+  "lang":"zh-Hans",
+  "icons":[
+    {"src":"assets/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
